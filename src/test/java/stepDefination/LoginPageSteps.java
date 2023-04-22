@@ -6,13 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import Base.Base;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import page.LoginPage;
 
-public class LoginPageSteps {
+public class LoginPageSteps extends Base{
 	
 	//WebDriver driver;
 	
@@ -46,8 +47,8 @@ public class LoginPageSteps {
 //}
 @Given("User launch site URL")
 public void User_launch_site_URL() {
-	
-	login.launchURL();
+	setup();
+//	login.launchURL();
 }
     // Write code here that turns the phrase above into concrete actions
   //  throw new io.cucumber.java.PendingException();

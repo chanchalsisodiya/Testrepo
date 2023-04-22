@@ -18,15 +18,15 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	WebDriver driver;
-	static Properties prop = new Properties();
+	public static WebDriver driver;
+	static Properties prop; 
 	
 	static {
 		
 	
 	try {
 			FileInputStream file= new FileInputStream("C:\\Users\\Chanchal Rajput\\automation work\\com.hafele\\Data\\Testdata.properties");
-			Properties prop= new Properties();
+			 prop= new Properties();
 			try {
 				prop.load(file);
 			} catch (IOException e) {
