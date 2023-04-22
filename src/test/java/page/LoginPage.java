@@ -52,8 +52,9 @@ public class LoginPage extends Base{
 		loginBtn.click();
 		
 	}
-	public void launchURL() {
-		setup();
-		
-	}
+//	public void launchURL() {
+//		setup();
+//		
+//	}
+
 }
